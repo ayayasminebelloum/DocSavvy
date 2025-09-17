@@ -1,0 +1,1836 @@
+{
+  "info": {
+    "description": "Invoice dataset annotations"
+  },
+  "licenses": [
+    {
+      "id": 1,
+      "name": "Unknown",
+      "url": ""
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "invoice number",
+      "supercategory": "field"
+    },
+    {
+      "id": 2,
+      "name": "invoice date",
+      "supercategory": "field"
+    },
+    {
+      "id": 3,
+      "name": "due date",
+      "supercategory": "field"
+    },
+    {
+      "id": 4,
+      "name": "billing address",
+      "supercategory": "field"
+    },
+    {
+      "id": 5,
+      "name": "name_client",
+      "supercategory": "field"
+    },
+    {
+      "id": 6,
+      "name": "total",
+      "supercategory": "field"
+    }
+  ],
+  "images": [
+    {
+      "id": 185,
+      "file_name": "669_png_jpg.rf.585cb7598cd91dea56c5bf4c2ab9a10a.jpg",
+      "width": 800,
+      "height": 1200,
+      "license": 1,
+      "date_captured": ""
+    },
+    {
+      "id": 150,
+      "file_name": "107_png_jpg.rf.5a4627c2fb17f35bd2fa28826ecc327b.jpg",
+      "width": 800,
+      "height": 1200,
+      "license": 1,
+      "date_captured": ""
+    },
+    {
+      "id": 40,
+      "file_name": "6294c8b96d0312bd14f2146c_jpg.rf.8670bee7ebb4487ce5e395fd1359a1e4.jpg",
+      "width": 800,
+      "height": 1200,
+      "license": 1,
+      "date_captured": ""
+    },
+    {
+      "id": 193,
+      "file_name": "421_png_jpg.rf.9b59632f4420ed860648ff20d6b4bc28.jpg",
+      "width": 800,
+      "height": 1200,
+      "license": 1,
+      "date_captured": ""
+    },
+    {
+      "id": 63,
+      "file_name": "480_jpg.rf.216d72a52928350afb00cb0cd4a1bcf3.jpg",
+      "width": 800,
+      "height": 1200,
+      "license": 1,
+      "date_captured": ""
+    },
+    {
+      "id": 235,
+      "file_name": "out_EMBALLAGES-IDF_facture_Emballages-IDF-factures-05-2021001-pdf13_jpg.rf.5370ff9e7f1d32ef16c920849f5e698a.jpg",
+      "width": 800,
+      "height": 1200,
+      "license": 1,
+      "date_captured": ""
+    },
+    {
+      "id": 22,
+      "file_name": "174_jpg.rf.f850d0ad3305794fedc8b7336ab242be.jpg",
+      "width": 800,
+      "height": 1200,
+      "license": 1,
+      "date_captured": ""
+    },
+    {
+      "id": 135,
+      "file_name": "20232461387_page-0001_jpg.rf.27c35a8719f6a6bff2854487a6d58ac6.jpg",
+      "width": 800,
+      "height": 1200,
+      "license": 1,
+      "date_captured": ""
+    },
+    {
+      "id": 176,
+      "file_name": "2609-Invoice-pdf_jpg.rf.e5116f28692a4afdc2f18a1f7d558710.jpg",
+      "width": 800,
+      "height": 1200,
+      "license": 1,
+      "date_captured": ""
+    },
+    {
+      "id": 183,
+      "file_name": "61_jpg.rf.544f1ef3f094b79c3e63d285456190c3.jpg",
+      "width": 800,
+      "height": 1200,
+      "license": 1,
+      "date_captured": ""
+    },
+    {
+      "id": 49,
+      "file_name": "480_jpg.rf.a84c7bf06c7f7e7333f6d008f34ce1e0.jpg",
+      "width": 800,
+      "height": 1200,
+      "license": 1,
+      "date_captured": ""
+    },
+    {
+      "id": 194,
+      "file_name": "144_jpg.rf.004f54dffc0c3dc7e7464ec8e847759e.jpg",
+      "width": 800,
+      "height": 1200,
+      "license": 1,
+      "date_captured": ""
+    },
+    {
+      "id": 287,
+      "file_name": "387_png_jpg.rf.edec4e176f7a81a6b89812b743fb0cb3.jpg",
+      "width": 800,
+      "height": 1200,
+      "license": 1,
+      "date_captured": ""
+    },
+    {
+      "id": 293,
+      "file_name": "214_jpg.rf.ef5042b6c1b1568bdf005d0449aff906.jpg",
+      "width": 800,
+      "height": 1200,
+      "license": 1,
+      "date_captured": ""
+    },
+    {
+      "id": 172,
+      "file_name": "Invoice_72_jpg.rf.1945b22dd4e47f3f6ea6591c7d75ce6b.jpg",
+      "width": 800,
+      "height": 1200,
+      "license": 1,
+      "date_captured": ""
+    },
+    {
+      "id": 110,
+      "file_name": "327_jpg.rf.b24ee6c9bac245ce328ef4e0967399f8.jpg",
+      "width": 800,
+      "height": 1200,
+      "license": 1,
+      "date_captured": ""
+    },
+    {
+      "id": 79,
+      "file_name": "343_jpg.rf.aa1baeb1f38c9be22a4a30bcc3d2e9c8.jpg",
+      "width": 800,
+      "height": 1200,
+      "license": 1,
+      "date_captured": ""
+    },
+    {
+      "id": 277,
+      "file_name": "385_png_jpg.rf.fbfdf61c24811183b5b00342ef1d057e.jpg",
+      "width": 800,
+      "height": 1200,
+      "license": 1,
+      "date_captured": ""
+    },
+    {
+      "id": 174,
+      "file_name": "489_jpg.rf.04c03560f9bca97f171dc75bf7951d06.jpg",
+      "width": 800,
+      "height": 1200,
+      "license": 1,
+      "date_captured": ""
+    },
+    {
+      "id": 290,
+      "file_name": "77_png_jpg.rf.befd2a317171110f988253b101a083b2.jpg",
+      "width": 800,
+      "height": 1200,
+      "license": 1,
+      "date_captured": ""
+    },
+    {
+      "id": 81,
+      "file_name": "625_jpg.rf.76e6549b273bf803ed7de7c98aff6c84.jpg",
+      "width": 800,
+      "height": 1200,
+      "license": 1,
+      "date_captured": ""
+    },
+    {
+      "id": 3,
+      "file_name": "109_jpg.rf.509c28d497bdd0ffb32fb17d05c53a28.jpg",
+      "width": 800,
+      "height": 1200,
+      "license": 1,
+      "date_captured": ""
+    },
+    {
+      "id": 142,
+      "file_name": "543_png_jpg.rf.69a99b07bf7157016dfbaf83cdeff5a0.jpg",
+      "width": 800,
+      "height": 1200,
+      "license": 1,
+      "date_captured": ""
+    },
+    {
+      "id": 229,
+      "file_name": "2650-Invoice-pdf_jpg.rf.df229efe29e4c2047abdc0e738e55d22.jpg",
+      "width": 800,
+      "height": 1200,
+      "license": 1,
+      "date_captured": ""
+    },
+    {
+      "id": 112,
+      "file_name": "589_jpg.rf.9a902cc98801c64964165213d012379a.jpg",
+      "width": 800,
+      "height": 1200,
+      "license": 1,
+      "date_captured": ""
+    },
+    {
+      "id": 214,
+      "file_name": "128_jpg.rf.3bd046b7e8886175e761713cfe877c17.jpg",
+      "width": 800,
+      "height": 1200,
+      "license": 1,
+      "date_captured": ""
+    },
+    {
+      "id": 292,
+      "file_name": "570_png_jpg.rf.95afca7c9564734f2825c883f7d44275.jpg",
+      "width": 800,
+      "height": 1200,
+      "license": 1,
+      "date_captured": ""
+    },
+    {
+      "id": 101,
+      "file_name": "501_jpg.rf.0b85f56667085c1cb7fa486d41960523.jpg",
+      "width": 800,
+      "height": 1200,
+      "license": 1,
+      "date_captured": ""
+    },
+    {
+      "id": 13,
+      "file_name": "659_png_jpg.rf.afc652908c803b64a4b9177fd3d70fe2.jpg",
+      "width": 800,
+      "height": 1200,
+      "license": 1,
+      "date_captured": ""
+    },
+    {
+      "id": 258,
+      "file_name": "556_jpg.rf.65ad1c677a4ef3b6ad89a0a6e27784ed.jpg",
+      "width": 800,
+      "height": 1200,
+      "license": 1,
+      "date_captured": ""
+    },
+    {
+      "id": 119,
+      "file_name": "624_jpg.rf.8931f12b19e8ea8159b9e2d1c389220c.jpg",
+      "width": 800,
+      "height": 1200,
+      "license": 1,
+      "date_captured": ""
+    },
+    {
+      "id": 111,
+      "file_name": "46_png_jpg.rf.3b8676b51d0afdfdd94582a848464e3c.jpg",
+      "width": 800,
+      "height": 1200,
+      "license": 1,
+      "date_captured": ""
+    },
+    {
+      "id": 47,
+      "file_name": "20200097343_page-0001_jpg.rf.83f3d4205b3dd42f33c4e85951f4e648.jpg",
+      "width": 800,
+      "height": 1200,
+      "license": 1,
+      "date_captured": ""
+    },
+    {
+      "id": 15,
+      "file_name": "outfile253_png_jpg.rf.fc75f83348e8337c71b4102ad95f0d93.jpg",
+      "width": 800,
+      "height": 1200,
+      "license": 1,
+      "date_captured": ""
+    },
+    {
+      "id": 16,
+      "file_name": "235_png_jpg.rf.967f92b61ce57a5becdd0c3d650f1197.jpg",
+      "width": 800,
+      "height": 1200,
+      "license": 1,
+      "date_captured": ""
+    },
+    {
+      "id": 216,
+      "file_name": "525_png_jpg.rf.ac460e445bedb705f30887e9510f1b00.jpg",
+      "width": 800,
+      "height": 1200,
+      "license": 1,
+      "date_captured": ""
+    },
+    {
+      "id": 44,
+      "file_name": "246_png_jpg.rf.d35f8a7c15c34630dde6565b274a724b.jpg",
+      "width": 800,
+      "height": 1200,
+      "license": 1,
+      "date_captured": ""
+    },
+    {
+      "id": 279,
+      "file_name": "272_png_jpg.rf.0167179d80600b53bc28455e88fc01b9.jpg",
+      "width": 800,
+      "height": 1200,
+      "license": 1,
+      "date_captured": ""
+    },
+    {
+      "id": 52,
+      "file_name": "65_png_jpg.rf.ad72bd04f715aa42f5de896807b09ee6.jpg",
+      "width": 800,
+      "height": 1200,
+      "license": 1,
+      "date_captured": ""
+    },
+    {
+      "id": 71,
+      "file_name": "535_png_jpg.rf.85094911e9af2203c2047018974fc61d.jpg",
+      "width": 800,
+      "height": 1200,
+      "license": 1,
+      "date_captured": ""
+    },
+    {
+      "id": 114,
+      "file_name": "161_jpg.rf.1d5d8f854d3726eb1f54376158124cee.jpg",
+      "width": 800,
+      "height": 1200,
+      "license": 1,
+      "date_captured": ""
+    },
+    {
+      "id": 125,
+      "file_name": "5766_png_jpg.rf.7b3bda2607fe26ba8dd0b314e772d5c6.jpg",
+      "width": 800,
+      "height": 1200,
+      "license": 1,
+      "date_captured": ""
+    },
+    {
+      "id": 140,
+      "file_name": "invoice55_jpg.rf.cc26afc551fd061945703f2b512f3314.jpg",
+      "width": 800,
+      "height": 1200,
+      "license": 1,
+      "date_captured": ""
+    },
+    {
+      "id": 12,
+      "file_name": "Invoice_29_jpg.rf.847853b6c1c75fc242d7ce9224191c17.jpg",
+      "width": 800,
+      "height": 1200,
+      "license": 1,
+      "date_captured": ""
+    },
+    {
+      "id": 57,
+      "file_name": "668_png_jpg.rf.423efcc90ebb389f53eb923835b0878b.jpg",
+      "width": 800,
+      "height": 1200,
+      "license": 1,
+      "date_captured": ""
+    }
+  ],
+  "annotations": [
+    {
+      "id": 482,
+      "image_id": 185,
+      "category_id": 4,
+      "text": "SyQsla WJyaid",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 483,
+      "image_id": 185,
+      "category_id": 5,
+      "text": "SyQsla WJyaid",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 394,
+      "image_id": 150,
+      "category_id": 4,
+      "text": "INVOLCE",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 395,
+      "image_id": 150,
+      "category_id": 5,
+      "text": "Barnett Business Center 32b3 Fairflower St, Miaml, FL Invoice No, lB3bb ss l33 393b Date",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 96,
+      "image_id": 40,
+      "category_id": 4,
+      "text": "PleGe AUTO",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 97,
+      "image_id": 40,
+      "category_id": 5,
+      "text": "amed Oo Fhervortsh. Row Toth Bast PES om PaLeme. te we Py ve ws o OGLULEtTa manne STAR ORGY azaT ace- It DICLETTE AAG . BRAT GUSFONTION CHAPS OINECTION 4o22.oo dh - Totel payer",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 509,
+      "image_id": 193,
+      "category_id": 1,
+      "text": "lB2Bb3b",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 510,
+      "image_id": 193,
+      "category_id": 4,
+      "text": "OHELTON CO.",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 511,
+      "image_id": 193,
+      "category_id": 5,
+      "text": "N CO. CLEANING SERVICES Invoice No. lB2Bb3b Client",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 164,
+      "image_id": 63,
+      "category_id": 1,
+      "text": "lB2Bb",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 165,
+      "image_id": 63,
+      "category_id": 4,
+      "text": "INVOICE Nueve Office Supplies",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 166,
+      "image_id": 63,
+      "category_id": 5,
+      "text": "Date",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 627,
+      "image_id": 235,
+      "category_id": 4,
+      "text": "2B",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 628,
+      "image_id": 235,
+      "category_id": 5,
+      "text": "UR EUROPA Temqrene oo.49 37 724B a chars ACACSSE O LIVRAISON b IMRALLAGE IGF TOUR Lscea 9432o THIAIS 432o THIALS Votre Identifiant Tya - WIREE UMBALLAGE IOF Gu 2s",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 53,
+      "image_id": 22,
+      "category_id": 4,
+      "text": "CA",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 54,
+      "image_id": 22,
+      "category_id": 5,
+      "text": "Rachel Smith, sB Apartment Street, The Valley, CA sss-l23-4sb QTY ITEM",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 357,
+      "image_id": 135,
+      "category_id": 4,
+      "text": "Yooooce",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 358,
+      "image_id": 135,
+      "category_id": 5,
+      "text": "Yooooce",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 465,
+      "image_id": 176,
+      "category_id": 4,
+      "text": "s PAN AGxemtzoe 7 Dectemtoen we . Mee . tee Companys Benn pete . We Geviate that tts imvorce shows the actual pres ef te goods Sank Nene The Mouth lagion Bank Seronbed and iat Bi PerLoUtars Bre LITUB Bd COTTER. . aro NO oo42o7 2oooooBoBs Branch B Cote Crown Cowl 4 Cuinedrel Rand Ch Customers Boel and Gionatare CO iat",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 466,
+      "image_id": 176,
+      "category_id": 5,
+      "text": "e o9,ol3. 7 . IMMEGIATE",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 478,
+      "image_id": 183,
+      "category_id": 5,
+      "text": "CK LETTER WATERCOLOR PAD ls xb",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 124,
+      "image_id": 49,
+      "category_id": 1,
+      "text": "lB2Bb",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 125,
+      "image_id": 49,
+      "category_id": 4,
+      "text": "INVOICE Nueve Office Supplies",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 126,
+      "image_id": 49,
+      "category_id": 5,
+      "text": "Date",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 512,
+      "image_id": 194,
+      "category_id": 1,
+      "text": "Sample value for category 1",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 513,
+      "image_id": 194,
+      "category_id": 2,
+      "text": "Sample value for category 2",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 514,
+      "image_id": 194,
+      "category_id": 3,
+      "text": "Sample value for category 3",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 515,
+      "image_id": 194,
+      "category_id": 4,
+      "text": "Sample value for category 4",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 516,
+      "image_id": 194,
+      "category_id": 5,
+      "text": "Sample value for category 5",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 517,
+      "image_id": 194,
+      "category_id": 6,
+      "text": "Sample value for category 6",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 762,
+      "image_id": 287,
+      "category_id": 4,
+      "text": "BLS",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 763,
+      "image_id": 287,
+      "category_id": 5,
+      "text": "BLS",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 780,
+      "image_id": 293,
+      "category_id": 4,
+      "text": "SAS",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 781,
+      "image_id": 293,
+      "category_id": 5,
+      "text": "T oe Lo een we SAS",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 456,
+      "image_id": 172,
+      "category_id": 4,
+      "text": "Sreei Asoress - Gay, Sate Dp Tee Wcioe Por, Company wore ID l crest Actress lene Date Cty. Sate Zp Due Dae Taw, Terms . Due upon recetpt",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 457,
+      "image_id": 172,
+      "category_id": 5,
+      "text": "Sreei Asoress - Gay",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 297,
+      "image_id": 110,
+      "category_id": 4,
+      "text": "Billed to DAngelo Miles Photography Chaney Tech Labs lBs Ernest St, Denver, CO 2B2 Wilson St, Denver, CO 3ll sss-oloo 3ll sss-oloo Infoadmilesphoto.site.com infoachaneytechlabs.site.com 4 ty Hi Rate Amount my Event photography l9 2.s 47.so Social media editing lB 3 s4 Private photoshoot l2 s bo Subtotal lbl.so Discount lo Tax Rate o Tax o Total l4s.3s Note",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 298,
+      "image_id": 110,
+      "category_id": 5,
+      "text": "DAngelo Miles Photography Chaney Tech Labs lBs Ernest St, Denver, CO 2B2 Wilson St, Denver, CO 3ll sss-oloo 3ll sss-oloo Infoadmilesphoto.site.com infoachaneytechlabs.site.com 4 ty Hi Rate Amount my Event photography l9 2.s 47.so Social media editing lB 3 s4 Private photoshoot l2 s bo Subtotal lbl.so Discount lo Tax Rate o Tax o Total l4s.3s Note",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 208,
+      "image_id": 79,
+      "category_id": 1,
+      "text": "799373",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 209,
+      "image_id": 79,
+      "category_id": 5,
+      "text": "TAL RETAIL COFFEE BAGS 3s 9.9o 347 CHEM BREWER 3s 3s TAKE AWAY CUPS l.2o l2l.2o SUNFLOWER PLANT ls 3o TOTAL s33.2o BILL TO",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 730,
+      "image_id": 277,
+      "category_id": 4,
+      "text": "Sep",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 731,
+      "image_id": 277,
+      "category_id": 5,
+      "text": "n, MA lbB Bellsway St, Boston, MA sss l4l 3boo sss 323 sB2b infoafhughueshire.sp.com infoasanfordhotel.sp.com Description Hrs",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 462,
+      "image_id": 174,
+      "category_id": 4,
+      "text": "NIC TAX INVOICE LIVE 4",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 463,
+      "image_id": 174,
+      "category_id": 5,
+      "text": "Name Creative Designers Mamet Craatve Dewgnare Billing Addreset bso-R, SaMasel Town, Delivery Addresst bso-B. o i Model Town, Jatandhar,P unjab, l44oo Jalandhar Punjab, l44oo3, States Purvab State Code",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 769,
+      "image_id": 290,
+      "category_id": 1,
+      "text": "B4B473",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 770,
+      "image_id": 290,
+      "category_id": 4,
+      "text": "S2o Flower",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 771,
+      "image_id": 290,
+      "category_id": 5,
+      "text": "TAL Sag Ne ty ata aw oe ce, ON sta ., ir NE ae a i Oats",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 212,
+      "image_id": 81,
+      "category_id": 4,
+      "text": "ERE BAILEY",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 213,
+      "image_id": 81,
+      "category_id": 5,
+      "text": "tal l3s4o Bank Transfer 2 Thynk Unlimited Bank . Account Number l l23-4sb-7B9o Tex o l3s4 Total l4B94 Terms and Conditions Payment Terms Are Usually Stated on the Invoice. These May Specity That the Buyer Has a Maximum Number of Days In Which To. Pay and ts Sometimes Offered a Discount If Pald Before the Due Date. Richard Sanchez Graphic Designer",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 6,
+      "image_id": 3,
+      "category_id": 1,
+      "text": "l23bb3",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 7,
+      "image_id": 3,
+      "category_id": 4,
+      "text": "Invoice Tanners Laundry Billed",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 8,
+      "image_id": 3,
+      "category_id": 5,
+      "text": "Invoice Number",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 378,
+      "image_id": 142,
+      "category_id": 4,
+      "text": "Neodyme - Magnatique Smm Trou 2ox",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 379,
+      "image_id": 142,
+      "category_id": 5,
+      "text": "TAL",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 611,
+      "image_id": 229,
+      "category_id": 1,
+      "text": "439",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 612,
+      "image_id": 229,
+      "category_id": 4,
+      "text": "GSTINJUIN",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 613,
+      "image_id": 229,
+      "category_id": 5,
+      "text": "BTINUIN c Sarkar asiascs cs eres Tard Nad Qi l Alawit lol3b4bPraMz-BOWEL WITH C cieren ree POR EXTENDED WALL HUNG aoa tevas i",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 301,
+      "image_id": 112,
+      "category_id": 4,
+      "text": "Npodd Wasi INCA",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 302,
+      "image_id": 112,
+      "category_id": 5,
+      "text": "Npodd Wasi INCA",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 574,
+      "image_id": 214,
+      "category_id": 4,
+      "text": "ORANGE TREE",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 575,
+      "image_id": 214,
+      "category_id": 5,
+      "text": "TAL SMALL CACTUS l lo.oo ORANGE TREE l 2s.oo ROSE BUSH l 3o.oo FOXGLOVES l ls.oo PUMPKIN SEEDS 2 lo.oo SUNFLOWER SEEDS 2 s.oo TAX s.oo TOTAL loo.oo THANK YOUi",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 778,
+      "image_id": 292,
+      "category_id": 4,
+      "text": "RX l",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 779,
+      "image_id": 292,
+      "category_id": 5,
+      "text": "RX l",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 271,
+      "image_id": 101,
+      "category_id": 4,
+      "text": "OZEels",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 272,
+      "image_id": 101,
+      "category_id": 5,
+      "text": "OZEels",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 28,
+      "image_id": 13,
+      "category_id": 4,
+      "text": "JULIE MARNITIER CAFE ET",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 29,
+      "image_id": 13,
+      "category_id": 5,
+      "text": "Ool 23 l4 bs 7B LA LUCIOLE Adresse du client b place Fernand Lafargue, 7soo2 Paris Quantity Red velvet cake Vanilla cupcake a set of l2 ame l er Classic carrot cake Sous-total",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 684,
+      "image_id": 258,
+      "category_id": 4,
+      "text": "AVERY DAVIS",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 685,
+      "image_id": 258,
+      "category_id": 5,
+      "text": "i Aaron toa Iweue Date ll",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 320,
+      "image_id": 119,
+      "category_id": 4,
+      "text": "RES Invol Teal Oress",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 321,
+      "image_id": 119,
+      "category_id": 5,
+      "text": "RES Invol Teal Oress",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 299,
+      "image_id": 111,
+      "category_id": 4,
+      "text": "FRool",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 300,
+      "image_id": 111,
+      "category_id": 5,
+      "text": "n Ayor Gendrttion Ayot OATE",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 119,
+      "image_id": 47,
+      "category_id": 4,
+      "text": "Hebets",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 120,
+      "image_id": 47,
+      "category_id": 5,
+      "text": "PNET Come PE 2olrAmOD Face hs o7oooo7 bowsrrena bochrs Penode du olol",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 32,
+      "image_id": 15,
+      "category_id": 1,
+      "text": "4292l",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 33,
+      "image_id": 15,
+      "category_id": 4,
+      "text": "GE",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 34,
+      "image_id": 15,
+      "category_id": 5,
+      "text": "M Fi Benjamin Palterson Port Harcourt, Rivers, . . wat Nigerte Balance Dux 249.Bs SAFCO Executive Leather Armchair, Black 2 427s.4o Chars, Furuse, FUR-CH-s774 Subtotal, 3sso.bo Discount 7o",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 35,
+      "image_id": 16,
+      "category_id": 4,
+      "text": "IRolbertsera",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 36,
+      "image_id": 16,
+      "category_id": 5,
+      "text": "IRolbertsera",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 582,
+      "image_id": 216,
+      "category_id": 4,
+      "text": "ALS",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 583,
+      "image_id": 216,
+      "category_id": 5,
+      "text": "ALS",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 109,
+      "image_id": 44,
+      "category_id": 4,
+      "text": "Ec - - ze S YsBo",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 110,
+      "image_id": 44,
+      "category_id": 5,
+      "text": "IMORANA",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 738,
+      "image_id": 279,
+      "category_id": 4,
+      "text": "234sb",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 739,
+      "image_id": 279,
+      "category_id": 5,
+      "text": "taliel4oo OtaLS4oo SUBTOTALIEIZoo ExnRASIEO OTA Iel4 OO",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 132,
+      "image_id": 52,
+      "category_id": 4,
+      "text": "ounmwa",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 133,
+      "image_id": 52,
+      "category_id": 5,
+      "text": "n ia QD izoal l ounmwa load esr DFESE YU 2cumsood . BOIAG YTO - Morrainsaza OO.pe Nosquoca oo.es rr. 4o2 zbrmnted Iniva oo.eE f 49b",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 183,
+      "image_id": 71,
+      "category_id": 1,
+      "text": "lbo9-ol",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 184,
+      "image_id": 71,
+      "category_id": 4,
+      "text": "Salford Co.",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 185,
+      "image_id": 71,
+      "category_id": 5,
+      "text": "TAL Web Page Design s. . lso,oob 7so.oo Ilistration lo 3s.oo 3so,oob Presentation Template so s.oo 2so,oo SUD TOTAL",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 305,
+      "image_id": 114,
+      "category_id": 1,
+      "text": "l929s",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 306,
+      "image_id": 114,
+      "category_id": 4,
+      "text": "Date",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 307,
+      "image_id": 114,
+      "category_id": 5,
+      "text": "ID",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 334,
+      "image_id": 125,
+      "category_id": 4,
+      "text": "POCKVILLE",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 335,
+      "image_id": 125,
+      "category_id": 5,
+      "text": "SHwPFED TO . LOFILLARD RESEARCH CENTEK Bivvees - Bad cEOx Eee 42o ENGLISH STREET ATTN A, AH HECK GREENSBORO, 2742o . . er iat H PAYMENT TEAMS NET 3o DAYE lrvence DATE oopspry UNSCHELSULED ORA SYNTHESIS erupr T4942.3Bo Pewes Pas-eoo-lo",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 373,
+      "image_id": 140,
+      "category_id": 4,
+      "text": "BA",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 374,
+      "image_id": 140,
+      "category_id": 5,
+      "text": "BA",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 26,
+      "image_id": 12,
+      "category_id": 4,
+      "text": "INOA",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 27,
+      "image_id": 12,
+      "category_id": 5,
+      "text": "HNS AED",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 146,
+      "image_id": 57,
+      "category_id": 4,
+      "text": "Baai",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    },
+    {
+      "id": 147,
+      "image_id": 57,
+      "category_id": 5,
+      "text": "Baai",
+      "bbox": [
+        0,
+        0,
+        100,
+        20
+      ],
+      "area": 2000,
+      "iscrowd": 0
+    }
+  ]
+}

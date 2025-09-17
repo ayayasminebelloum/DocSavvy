@@ -1,0 +1,140 @@
+{% extends "base.html" %}
+
+{% block title %}Document Classification System{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-10 col-lg-8">
+            <div class="page-header text-center mb-5 fade-in">
+                <h1 class="display-4 fw-bold mb-3">Document Classification System</h1>
+                <p class="lead text-muted mb-0">Upload documents for AI-powered classification</p>
+            </div>
+            
+            <div class="card mb-5 fade-in">
+                <div class="card-body p-4">
+                    <form id="upload-form" action="{{ url_for('api_upload_file') }}" method="post" enctype="multipart/form-data" class="upload-form">
+                        <div class="upload-area">
+                            <div class="upload-icon">
+                                <i class="fas fa-cloud-upload-alt fa-3x"></i>
+                            </div>
+                            <h3 class="upload-title mb-3">Drag & Drop Files Here</h3>
+                            <p class="upload-text mb-4">or click to browse your files</p>
+                            <div id="selected-files" class="mb-3"></div>
+                            <div class="upload-info text-muted small">
+                                <p class="mb-1">Accepted file types: PDF, DOCX, JPG, PNG</p>
+                                <p class="mb-0">Maximum file size: 10MB</p>
+                            </div>
+                            <input type="file" name="files[]" class="file-input d-none" accept=".pdf,.docx,.jpg,.jpeg,.png,.txt,.csv,.xls,.xlsx" multiple>
+                        </div>
+                        
+                        <div class="text-center mt-4">
+                            <div id="upload-status" class="alert d-none mb-3"></div>
+                            <button type="submit" class="btn btn-primary" id="manual-submit">Upload Documents</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div id="upload-progress" class="d-none">
+                <div class="progress mb-3">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 100%"></div>
+                </div>
+                <p class="text-center">Processing documents... Please wait.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const uploadForm = document.getElementById('upload-form');
+    const fileInput = document.querySelector('.file-input');
+    const uploadProgress = document.getElementById('upload-progress');
+    const uploadStatus = document.getElementById('upload-status');
+    const selectedFilesContainer = document.getElementById('selected-files');
+    
+    // Display selected files
+    fileInput.addEventListener('change', function() {
+        selectedFilesContainer.innerHTML = '';
+        
+        if (this.files.length > 0) {
+            const fileList = document.createElement('ul');
+            fileList.className = 'list-group';
+            
+            for (let i = 0; i < this.files.length; i++) {
+                const file = this.files[i];
+                const fileItem = document.createElement('li');
+                fileItem.className = 'list-group-item d-flex justify-content-between align-items-center';
+                fileItem.innerHTML = `
+                    <span><i class="fas fa-file mr-2"></i> ${file.name}</span>
+                    <span class="badge badge-primary badge-pill">${(file.size / 1024).toFixed(1)} KB</span>
+                `;
+                fileList.appendChild(fileItem);
+            }
+            
+            selectedFilesContainer.appendChild(fileList);
+        }
+    });
+    
+    // Handle form submission
+    uploadForm.addEventListener('submit', function(e) {
+        e.preventDefault(); // Prevent standard form submission
+        
+        if (!fileInput.files || fileInput.files.length === 0) {
+            showStatus('Please select at least one file to upload', 'danger');
+            return;
+        }
+        
+        // Show upload progress
+        uploadProgress.classList.remove('d-none');
+        showStatus(`Uploading ${fileInput.files.length} file(s)...`, 'info');
+        
+        // Create FormData and submit via fetch
+        const formData = new FormData();
+        
+        // Add all files to the formData
+        for (let i = 0; i < fileInput.files.length; i++) {
+            formData.append('files[]', fileInput.files[i]);
+        }
+        
+        fetch('/api/upload_multiple', {
+            method: 'POST',
+            body: formData,
+        })
+        .then(response => {
+            if (!response.ok) {
+                return response.json().then(data => {
+                    throw new Error(data.message || 'Network response was not ok');
+                });
+            }
+            return response.json();
+        })
+        .then(data => {
+            if (data.success) {
+                showStatus('Files uploaded and classified successfully. Showing results...', 'success');
+                // Redirect to results page
+                setTimeout(() => {
+                    window.location.href = data.redirect_url;
+                }, 1000);
+            } else {
+                throw new Error(data.message || 'Unknown error');
+            }
+        })
+        .catch(error => {
+            uploadProgress.classList.add('d-none');
+            showStatus('Error: ' + error.message, 'danger');
+            console.error('Error:', error);
+        });
+    });
+    
+    function showStatus(message, type) {
+        uploadStatus.textContent = message;
+        uploadStatus.className = `alert alert-${type} mb-3`;
+        uploadStatus.classList.remove('d-none');
+    }
+});
+</script>
+{% endblock %} 

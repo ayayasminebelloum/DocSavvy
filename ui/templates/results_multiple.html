@@ -1,0 +1,166 @@
+{% extends "base.html" %}
+
+{% block title %}Classification Results{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+            <div class="page-header text-center mb-5 fade-in">
+                <h1 class="display-4 fw-bold mb-3">Classification Results</h1>
+                <p class="lead text-muted mb-0">Results for your uploaded documents</p>
+            </div>
+            
+            <div class="card mb-4 fade-in">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0">Multiple Documents Processed</h5>
+                </div>
+                <div class="card-body p-0">
+                    <div class="table-responsive">
+                        <table class="table table-hover mb-0">
+                            <thead>
+                                <tr>
+                                    <th>Document</th>
+                                    <th>Type</th>
+                                    <th>Size</th>
+                                    <th>Classification</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for result in results %}
+                                <tr>
+                                    <td>
+                                        <span class="truncate" title="{{ result.filename }}">{{ result.filename }}</span>
+                                    </td>
+                                    <td>{{ result.file_type }}</td>
+                                    <td>{{ result.file_size }}</td>
+                                    <td>
+                                        {% if result.classification == 'Error' %}
+                                            <span class="badge bg-danger">Error: {{ result.error }}</span>
+                                        {% else %}
+                                            <span class="badge bg-success">{{ result.classification }}</span>
+                                        {% endif %}
+                                    </td>
+                                    <td>
+                                        {% if result.classification|lower == 'invoice' and result.invoice_fields %}
+                                            <button type="button" class="btn btn-sm btn-info" data-bs-toggle="modal" data-bs-target="#invoiceModal{{ loop.index }}">
+                                                <i class="fas fa-receipt me-1"></i> View Details
+                                            </button>
+                                        {% endif %}
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Invoice Modals -->
+            {% for result in results %}
+                {% if result.classification|lower == 'invoice' and result.invoice_fields %}
+                    <div class="modal fade" id="invoiceModal{{ loop.index }}" tabindex="-1" aria-labelledby="invoiceModalLabel{{ loop.index }}" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header bg-info text-white">
+                                    <h5 class="modal-title" id="invoiceModalLabel{{ loop.index }}">
+                                        <i class="fas fa-receipt me-2"></i>Invoice Details - 
+                                        <span class="truncate" title="{{ result.filename }}">{{ result.filename }}</span>
+                                    </h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <table class="table table-striped">
+                                        <tbody>
+                                            {% for field, value in result.invoice_fields.items() %}
+                                            <tr>
+                                                <th scope="row" style="width: 40%;">
+                                                    {% set field_name = field|replace('_', ' ')|title %}
+                                                    {% if field == 'invoice_number' %}
+                                                        <i class="fas fa-hashtag me-2"></i>
+                                                    {% elif 'date' in field %}
+                                                        <i class="fas fa-calendar me-2"></i>
+                                                    {% elif field == 'total_amount' %}
+                                                        <i class="fas fa-dollar-sign me-2"></i>
+                                                    {% elif 'name' in field %}
+                                                        <i class="fas fa-user me-2"></i>
+                                                    {% else %}
+                                                        <i class="fas fa-info-circle me-2"></i>
+                                                    {% endif %}
+                                                    {{ field_name }}
+                                                </th>
+                                                <td>
+                                                    {% if value == 'Not Present' %}
+                                                        <span class="badge bg-secondary">{{ value }}</span>
+                                                    {% elif value == 'Present but value not found' %}
+                                                        <span class="badge bg-warning text-dark">{{ value }}</span>
+                                                    {% else %}
+                                                        <span class="text-success fw-bold">{{ value }}</span>
+                                                    {% endif %}
+                                                </td>
+                                            </tr>
+                                            {% endfor %}
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+            
+            <!-- Classification statistics -->
+            <div class="card mb-4 fade-in">
+                <div class="card-header bg-secondary text-white">
+                    <h5 class="mb-0">Classification Statistics</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        {% set categories = {} %}
+                        {% for result in results if result.classification != 'Error' %}
+                            {% if result.classification in categories %}
+                                {% set _ = categories.update({result.classification: categories[result.classification] + 1}) %}
+                            {% else %}
+                                {% set _ = categories.update({result.classification: 1}) %}
+                            {% endif %}
+                        {% endfor %}
+                        
+                        {% for category, count in categories.items() %}
+                        <div class="col-md-4 mb-3">
+                            <div class="card h-100">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">{{ category }}</h5>
+                                    <p class="display-4">{{ count }}</p>
+                                    <p class="text-muted">{{ (count / results|length * 100)|round(1) }}% of documents</p>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                        
+                        {% set errors = results|selectattr('classification', 'equalto', 'Error')|list|length %}
+                        {% if errors > 0 %}
+                        <div class="col-md-4 mb-3">
+                            <div class="card h-100 border-danger">
+                                <div class="card-body text-center text-danger">
+                                    <h5 class="card-title">Errors</h5>
+                                    <p class="display-4">{{ errors }}</p>
+                                    <p class="text-muted">{{ (errors / results|length * 100)|round(1) }}% of documents</p>
+                                </div>
+                            </div>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mb-5">
+                <a href="{{ url_for('index') }}" class="btn btn-primary">Upload More Documents</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

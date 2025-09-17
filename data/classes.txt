@@ -1,0 +1,6 @@
+0 bank_statements
+1 contracts
+2 emails
+3 invoices
+4 other
+5 receipts

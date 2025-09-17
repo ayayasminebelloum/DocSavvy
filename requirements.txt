@@ -1,0 +1,23 @@
+tensorflow
+keras
+scikit-learn
+numpy
+pandas
+matplotlib
+opencv-python
+pillow
+pytesseract
+PyPDF2
+symspellpy
+spacy
+h5py
+tqdm
+openpyxl
+fuzzywuzzy
+flask
+pdf2image
+datasets
+python-Levenshtein # boosts fuzzywuzzy speed
+
+# After installing packages, install the English language model with:
+# python -m spacy download en_core_web_sm
